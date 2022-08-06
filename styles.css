@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    border-top: solid black 2px;
+}
+
+.alert {
+    min-width: 22rem;
+    max-width: 30rem;
+}
+
+
+#filters {
+    display: flex;
+    /*background-color: rgba(117, 190, 218, 0.5);*/
+    align-items: baseline;
+}
+
+#display {
+    display: flex;
+    flex-wrap: wrap;
+}

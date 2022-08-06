@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Climb Logger</title>
+        <!-- CSS only -->
+        <link href="/sass/main.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </head>
+    <body class="bg-white">
+        <header class="bg-primary"><h1 class="text-light my-4">Climb Logger</h1></header>
+        <main class="my-2">
+            <button type="button" id="new" class="btn btn-primary text-light ms-2">New Climb</button>
+            <div id="formContainer"></div>
+            <br>
+            <div id="filters" class="mx-2">
+                <p>Filters:</p>
+                <div id="filter-buttons" class="ms-2">
+                    <button type="button" id="filter-boulder" class="btn btn-outline-primary mx-1">Boulder</button>
+                    <button type="button" id="filter-sport" class="btn btn-outline-primary mx-1">Sport</button>
+                    <button type="button" id="filter-trad" class="btn btn-outline-primary mx-1">Trad</button>
+                </div>
+            </div>
+            <br>
+            <div id="display"></div>
+        </main>
+        <footer>
+            <p>This application was developed using HTML, CSS, JQuery and Bootstrap.</p>
+        </footer>
+        <!--Bootstrap JS Bundle-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
