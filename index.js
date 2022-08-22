@@ -65,8 +65,10 @@ $( document ).ready(function() {
             displayContainer.prepend(`
             <div class="card mx-2 mb-2 bg-secondary" style="width: 16rem;">
                 <div class="climbItem card-body">
-                    <h4 class="card-title">${climbData[idx][0]}</h4>
-                    <h5 class="card-subtitle text-success">${climbData[idx][4]}</h5>
+                    <div class="card-head">
+                        <h4 class="card-title">${climbData[idx][0]}</h4>
+                        <h4 class="card-subtitle text-success">${climbData[idx][4]}</h4>
+                    </div>
                     <ul class="list-group my-2">
                         <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
                         <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
@@ -201,8 +203,10 @@ $( document ).ready(function() {
         displayContainer.prepend(`
         <div class="card mx-2 mb-2 bg-secondary" style="width: 16rem;">
             <div class="climbItem card-body">
-                <h4 class="card-title">${climbName}</h4>
-                <h5 class="card-subtitle text-success">${climbGrade}</h5>
+                <div class="card-head">
+                    <h4 class="card-title">${climbName}</h4>
+                    <h4 class="card-subtitle text-success">${climbGrade}</h4>
+                </div>
                 <ul class="list-group my-2">
                     <li class="list-group-item bg-secondary">${climbCrag}</li>
                     <li class="list-group-item bg-secondary">${climbDate}</li>
@@ -255,8 +259,10 @@ $( document ).ready(function() {
                         displayContainer.prepend(`
                         <div class="card mx-2 mb-2 bg-secondary" style="width: 16rem;">
                             <div class="climbItem card-body">
-                                <h4 class="card-title">${climbData[idx][0]}</h4>
-                                <h5 class="card-subtitle text-success">${climbData[idx][4]}</h5>
+                                <div class="card-head">
+                                    <h4 class="card-title">${climbData[idx][0]}</h4>
+                                    <h4 class="card-subtitle text-success">${climbData[idx][4]}</h4>
+                                 </div>
                                 <ul class="list-group my-2">
                                     <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
                                     <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
@@ -287,17 +293,19 @@ $( document ).ready(function() {
                 for (let idx = 0; idx < climbData.length; idx++) {
                     displayContainer.prepend(`
                     <div class="card mx-2 mb-2 bg-secondary" style="width: 16rem;">
-                        <div class="climbItem card-body">
+                    <div class="climbItem card-body">
+                        <div class="card-head">
                             <h4 class="card-title">${climbData[idx][0]}</h4>
-                            <h5 class="card-subtitle text-success">${climbData[idx][4]}</h5>
-                            <ul class="list-group my-2">
-                                <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
-                                <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
-                                <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
-                            </ul>
-                            <button class="delete btn btn-primary btn-sm">Delete</button>
-                        </div>
+                            <h4 class="card-subtitle text-success">${climbData[idx][4]}</h4>
+                         </div>
+                        <ul class="list-group my-2">
+                            <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
+                            <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
+                            <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
+                        </ul>
+                        <button type="button" class="delete btn btn-primary btn-sm">Delete</button>
                     </div>
+                </div>
                     `);
                 };
             }
@@ -325,17 +333,19 @@ $( document ).ready(function() {
                     if (climbData[idx].includes('Sport')) {
                         displayContainer.prepend(`
                         <div class="card mx-2 mb-2 bg-secondary" style="width: 16rem;">
-                            <div class="climbItem card-body">
+                        <div class="climbItem card-body">
+                            <div class="card-head">
                                 <h4 class="card-title">${climbData[idx][0]}</h4>
-                                <h5 class="card-subtitle text-success">${climbData[idx][4]}</h5>
-                                <ul class="list-group my-2">
-                                    <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
-                                    <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
-                                    <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
-                                </ul>
-                                <button class="delete btn btn-primary btn-sm">Delete</button>
-                            </div>
+                                <h4 class="card-subtitle text-success">${climbData[idx][4]}</h4>
+                             </div>
+                            <ul class="list-group my-2">
+                                <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
+                                <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
+                                <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
+                            </ul>
+                            <button type="button" class="delete btn btn-primary btn-sm">Delete</button>
                         </div>
+                    </div>
                         `);
                     };
                 };
@@ -360,17 +370,19 @@ $( document ).ready(function() {
                 for (let idx = 0; idx < climbData.length; idx++) {
                     displayContainer.prepend(`
                     <div class="card mx-2 mb-2 bg-secondary" style="width: 16rem;">
-                        <div class="climbItem card-body">
+                    <div class="climbItem card-body">
+                        <div class="card-head">
                             <h4 class="card-title">${climbData[idx][0]}</h4>
-                            <h5 class="card-subtitle text-success">${climbData[idx][4]}</h5>
-                            <ul class="list-group my-2">
-                                <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
-                                <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
-                                <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
-                            </ul>
-                            <button class="delete btn btn-primary btn-sm">Delete</button>
-                        </div>
+                            <h4 class="card-subtitle text-success">${climbData[idx][4]}</h4>
+                         </div>
+                        <ul class="list-group my-2">
+                            <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
+                            <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
+                            <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
+                        </ul>
+                        <button type="button" class="delete btn btn-primary btn-sm">Delete</button>
                     </div>
+                </div>
                     `);
                 };
             }
@@ -399,17 +411,19 @@ $( document ).ready(function() {
                     if (climbData[idx].includes('Trad')) {
                         displayContainer.prepend(`
                         <div class="card mx-2 mb-2 bg-secondary" style="width: 16rem;">
-                            <div class="climbItem card-body">
+                        <div class="climbItem card-body">
+                            <div class="card-head">
                                 <h4 class="card-title">${climbData[idx][0]}</h4>
-                                <h5 class="card-subtitle text-success">${climbData[idx][4]}</h5>
-                                <ul class="list-group my-2">
-                                    <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
-                                    <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
-                                    <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
-                                </ul>
-                                <button class="delete btn btn-primary btn-sm">Delete</button>
-                            </div>
+                                <h4 class="card-subtitle text-success">${climbData[idx][4]}</h4>
+                             </div>
+                            <ul class="list-group my-2">
+                                <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
+                                <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
+                                <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
+                            </ul>
+                            <button type="button" class="delete btn btn-primary btn-sm">Delete</button>
                         </div>
+                    </div>
                         `);
                     };
                 };
@@ -434,17 +448,19 @@ $( document ).ready(function() {
                 for (let idx = 0; idx < climbData.length; idx++) {
                     displayContainer.prepend(`
                     <div class="card mx-2 mb-2 bg-secondary" style="width: 16rem;">
-                        <div class="climbItem card-body">
+                    <div class="climbItem card-body">
+                        <div class="card-head">
                             <h4 class="card-title">${climbData[idx][0]}</h4>
-                            <h5 class="card-subtitle text-success">${climbData[idx][4]}</h5>
-                            <ul class="list-group my-2">
-                                <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
-                                <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
-                                <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
-                            </ul>
-                            <button class="delete btn btn-primary btn-sm">Delete</button>
-                        </div>
+                            <h4 class="card-subtitle text-success">${climbData[idx][4]}</h4>
+                         </div>
+                        <ul class="list-group my-2">
+                            <li class="list-group-item bg-secondary">${climbData[idx][1]}</li>
+                            <li class="list-group-item bg-secondary">${climbData[idx][2]}</li>
+                            <li class="list-group-item bg-secondary">${climbData[idx][3]}</li>
+                        </ul>
+                        <button type="button" class="delete btn btn-primary btn-sm">Delete</button>
                     </div>
+                </div>
                     `);
                 };
             }
